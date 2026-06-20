@@ -32,6 +32,11 @@
 		clock-names = "xclk";
 		reset-gpios = <&pcal6524 22 GPIO_ACTIVE_LOW>;
 		powerdown-gpios = <&gpio4 28 GPIO_ACTIVE_HIGH>;
+
+		avdd-supply = <&reg_2p8v>;
+		dvdd-supply = <&reg_1p2v>;
+		dovdd-supply = <&reg_1p8v>;
+
 		status = "okay";
 
 		port {
